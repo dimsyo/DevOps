@@ -1,0 +1,41 @@
+[Unit]
+Description=Python Application Service (Hardened Production Unit)
+Documentation=file:///c:/Users/Premio/Documents/Belajar%20Devops/Semua/project-01-linux-automation-git/README.md
+After=network.target nginx.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/my-python-app
+ExecStart=/usr/bin/python3 /opt/my-python-app/scripts/dummy_app.py
+ExecReload=/bin/kill -HUP $MAINPID
+
+# Auto-Restart Policy on Failure
+Restart=always
+RestartSec=5s
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+# Environment Configuration
+Environment=APP_PORT=8000
+Environment=APP_HOST=127.0.0.1
+Environment=PYTHONUNBUFFERED=1
+
+# Linux Security Hardening Options
+ProtectSystem=full
+ProtectHome=true
+PrivateTmp=true
+NoNewPrivileges=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+
+# Resource Limits (cgroups v2)
+MemoryMax=256M
+MemoryHigh=200M
+CPUQuota=50%
+TasksMax=100
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+/var/log/my-app/*.log {
+    daily
+    rotate 7
+    missingok
+    notifempty
+    compress
+    delaycompress
+    create 0640 www-data www-data
+    sharedscripts
+    postrotate
+        systemctl reload my-python-app.service > /dev/null 2>&1 || true
+    endscript
+}

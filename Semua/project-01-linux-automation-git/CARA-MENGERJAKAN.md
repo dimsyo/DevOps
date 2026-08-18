@@ -208,7 +208,7 @@ Aplikasi menulis log di `/var/log/my-app/app.log`. Kita akan mengatur otomatisas
    Berikan izin eksekusi dan jalankan script:
    ```bash
    chmod +x scripts/backup_with_rotation.sh
-   sudo ./scripts/backup_with_rotation.sh /var/log/my-app /var/backups/my-app "HTTPS_DISCORD_WEBHOOK_URL_KAMU"
+   sudo ./scripts/backup_with_rotation.sh /var/log/my-app /var/backups/my-app "https://discordapp.com/api/webhooks/1219890706265538600/T6hG51MNJ_e91WvsLaZ8pilRY9pJTBqI0GjrgQafxfx1ScFFQmRy_R4mkkpTnIi1QP9G"
    ```
    - Ganti `"HTTPS_DISCORD_WEBHOOK_URL_KAMU"` dengan URL Discord/Telegram webhook milikmu untuk menerima notifikasi. Jika tidak ada, kosongkan parameter ketiga `""`.
 
@@ -225,7 +225,7 @@ Aplikasi menulis log di `/var/log/my-app/app.log`. Kita akan mengatur otomatisas
    ```
    Tambahkan baris berikut di bagian paling bawah:
    ```cron
-   0 2 * * * /opt/my-python-app/scripts/backup_with_rotation.sh /var/log/my-app /var/backups/my-app "WEBHOOK_URL" >> /var/log/backup.log 2>&1
+   0 2 * * * /opt/my-python-app/scripts/backup_with_rotation.sh /var/log/my-app /var/backups/my-app "https://discordapp.com/api/webhooks/1219890706265538600/T6hG51MNJ_e91WvsLaZ8pilRY9pJTBqI0GjrgQafxfx1ScFFQmRy_R4mkkpTnIi1QP9G" >> /var/log/backup.log 2>&1
    ```
 
 ---
@@ -270,10 +270,10 @@ Jika mengalami kendala saat mengerjakan, gunakan metode diagnostik ber-layer ber
 
 Gunakan checklist ini untuk memastikan seluruh tugas proyek telah berhasil kamu kerjakan 100%:
 
-- [ ] `setup_infrastructure.sh` berjalan sukses tanpa error dengan `sudo`.
-- [ ] User `www-data`, folder `/opt/my-python-app`, dan `/var/log/my-app` tercipta dengan permission 755/750.
+- [x] `setup_infrastructure.sh` berjalan sukses tanpa error dengan `sudo`.
+- [x] User `www-data`, folder `/opt/my-python-app`, dan `/var/log/my-app` tercipta dengan permission 755/750.
 - [ ] Service `my-python-app.service` berstatus *active (running)* di bawah Systemd.
-- [ ] Simulasi `kill -9` terbukti otomatis di-restart oleh Systemd.
+- [x] Simulasi `kill -9` terbukti otomatis di-restart oleh Systemd.
 - [ ] Nginx Reverse Proxy merespons HTTP `200 OK` saat diakses via domain/host.
 - [ ] Security headers & Rate limiting Nginx terverifikasi aktif.
 - [ ] `logrotate` berhasil memutar log `app.log` menjadi `app.log.1.gz`.

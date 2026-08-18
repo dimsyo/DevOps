@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Track/02-learning-phases.md",
+                "file": "Track/04-project-roadmap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02-learning-phases"
+              "title": "04-project-roadmap"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "4dfaa3fbb00da8e9",
@@ -191,16 +191,19 @@
   "active": "01f0c22e5ba35710",
   "lastOpenFiles": [
     "Semua/project-01-linux-automation-git/CARA-MENGERJAKAN.md",
-    "Semua/project-01-linux-automation-git/logrotate.d/my-python-app",
-    "Semua/project-01-linux-automation-git/logrotate.d",
-    "Semua/project-01-linux-automation-git/nginx/conf.d/app.conf",
-    "Semua/project-01-linux-automation-git/nginx/conf.d",
-    "Semua/project-01-linux-automation-git/nginx/nginx.conf",
-    "Semua/project-01-linux-automation-git/nginx",
-    "Semua/project-01-linux-automation-git/systemd/my-python-app.service",
-    "Semua/project-01-linux-automation-git/systemd",
-    "Semua/project-01-linux-automation-git/scripts/dummy_app.py",
-    "Semua/project-01-linux-automation-git/scripts/targets.csv",
+    "Semua/project-02-microservices-docker-security/CARA-MENGERJAKAN.md",
+    "Semua/project-02-microservices-docker-security/README.md",
+    "Semua/project-02-microservices-docker-security/scripts/test_stack.sh",
+    "Semua/project-02-microservices-docker-security/scripts/security_scan.ps1",
+    "Semua/project-02-microservices-docker-security/scripts/security_scan.sh",
+    "Semua/project-02-microservices-docker-security/scripts",
+    "Semua/project-02-microservices-docker-security/docker-compose.yml",
+    "Semua/project-02-microservices-docker-security/nginx/Dockerfile",
+    "Semua/project-02-microservices-docker-security/nginx/nginx.conf",
+    "Semua/project-02-microservices-docker-security/nginx",
+    "Semua/project-02-microservices-docker-security/app/Dockerfile",
+    "Semua/project-02-microservices-docker-security/app/requirements.txt",
+    "Track/02-learning-phases.md",
     "Semua/project-01-linux-automation-git/docs/04-troubleshooting-playbook.md",
     "Semua/project-01-linux-automation-git/docs/03-devops-networking-and-nginx.md",
     "Semua/project-01-linux-automation-git/docs/02-linux-automation-and-systemd.md",
@@ -210,7 +213,6 @@
     "Track/06-devsecops-roadmap.md",
     "Track/05-troubleshooting-and-incidents.md",
     "Track/04-project-roadmap.md",
-    "Track/02-learning-phases.md",
     "Track/01-skill-gap-matrix.md",
     "Track/08-assessments-and-readiness-checklist.md",
     "Track/devops_learning_track.md"

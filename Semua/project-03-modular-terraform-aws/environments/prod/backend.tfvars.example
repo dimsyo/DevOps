@@ -1,0 +1,5 @@
+bucket         = "devops-modular-tfstate-bucket-prod"
+key            = "environments/prod/terraform.tfstate"
+region         = "ap-southeast-1"
+dynamodb_table = "devops-modular-tfstate-locks-prod"
+encrypt        = true

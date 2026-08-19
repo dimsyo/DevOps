@@ -137,9 +137,9 @@ chmod +x scripts/test_stack.sh
 
 ## 🎯 Kriteria Kelulusan Project 2
 
-- [x] Multi-stage build `Dockerfile` untuk FastAPI dengan base `python:3.11-slim` dan non-root user `appuser`.
-- [x] Orchestration 4-tier service (Nginx Proxy, FastAPI, PostgreSQL, Redis) dalam 1 `docker-compose.yml`.
-- [x] Penggunaan custom bridge network `microservices-net` & persistent volume.
-- [x] Healthcheck terpasang di semua service dengan urutan dependensi `depends_on: condition: service_healthy`.
-- [x] Pemindaian kerentanan menggunakan Trivy dengan hasil 0 High/Critical vulnerability.
-- [x] Dokumentasi lengkap `README.md` dan `CARA-MENGERJAKAN.md`.
+- [ ] Multi-stage build `Dockerfile` untuk FastAPI dengan base `python:3.11-slim` dan non-root user `appuser`.
+- [ ] Orchestration 4-tier service (Nginx Proxy, FastAPI, PostgreSQL, Redis) dalam 1 `docker-compose.yml`.
+- [ ] Penggunaan custom bridge network `microservices-net` & persistent volume.
+- [ ] Healthcheck terpasang di semua service dengan urutan dependensi `depends_on: condition: service_healthy`.
+- [ ] Pemindaian kerentanan menggunakan Trivy dengan hasil 0 High/Critical vulnerability.
+- [ ] Dokumentasi lengkap `README.md` dan `CARA-MENGERJAKAN.md`.
